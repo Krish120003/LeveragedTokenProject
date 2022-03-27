@@ -1,14 +1,14 @@
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
 
-use cosmwasm_std::{Addr, Coin, Order, StdError, StdResult, Storage};
+use cosmwasm_std::{Addr, Coin, Order, StdError, StdResult, Storage, Uint128};
 use cw20::{Balance, Cw20CoinVerified};
 
 use cw_storage_plus::Item;
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 pub struct State {
-    pub count: i32,
+    pub count: Uint128,
     pub owner: Addr,
 }
 

@@ -46,7 +46,7 @@ pub fn execute(
 ) -> Result<Response, ContractError> {
     match msg {
         ExecuteMsg::Increment {} => try_increment(deps),
-        ExecuteMsg::Reset { count } => try_reset(deps, info, Uint128::new(u128::from(count))),
+        ExecuteMsg::Reset { count } => try_reset(deps, info, count),
         ExecuteMsg::Receive(msg) => receive_cw20(deps, _env, info, msg),
     }
 }

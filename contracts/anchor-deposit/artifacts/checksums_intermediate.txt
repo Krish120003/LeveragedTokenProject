@@ -1,0 +1,1 @@
+6bdf99d901d486995d092a39413716300c4fe593f19db6e68d5016d1bca5c562  ./target/wasm32-unknown-unknown/release/anchor_deposit.wasm
